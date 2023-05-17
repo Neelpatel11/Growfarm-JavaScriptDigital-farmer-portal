@@ -10,6 +10,34 @@ Moreover, the portal incorporates smart farming capabilities, utilizing machine 
 
 The portal was built to address the challenges faced by farmers in accessing crucial agricultural information and services. It aims to streamline decision-making by providing a centralized platform with a unique farmer ID for accessing schemes, land details, APMC history, and smart farming capabilities. The goal is to empower farmers with valuable insights, improve their decision-making, and enhance overall agricultural outcomes.
 
+## 🛠️ Local development
+
+That's pretty easy. To ensure that you are able to install everything properly, we would recommend you to have <b>Git</b>, <b>NPM</b> and <b>Node.js</b> installed.
+
+We will first start with setting up the Local Project Environment:
+
+```sh
+git clone https://github.com/Neelpatel11/Growfarm-Digital-farmer-portal.git
+cd Growfarm-Digital-farmer-portal
+npm run install
+```
+Now we will add the environment variables in the client/ and server/
+
+**Client**
+```sh
+cd client
+npm install
+npm start
+```
+For server setup, you need to add your MongoDB database URL to /config/mongoose.js.
+
+**Server**
+```sh
+cd server
+npm install
+npm start
+```
+
 ## 🛠️ Features of growfarm
 
 Digital profile of farmers: Every farmer can register their self on growfarm after that they get a unique farmer id. Farmer id help farmers to get all information of them like farm information, eligible schemes, scheme application history, billing history, loan history, insurance history.
